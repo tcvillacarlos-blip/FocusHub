@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusHub | Student Productivity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Focus<span>Hub</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="index.html">Home</a>
+      <a href="planner.html">Planner</a>
+      <a href="resources.html">Resources</a>
+      <a href="events.html">Events</a>
+      <a href="profile.html">Profile</a>
+      <button class="theme-btn" id="themeBtn" title="Toggle dark mode">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">STUDENT PRODUCTIVITY HUB</p>
+        <h1>Plan less.<br><span>Achieve more.</span></h1>
+        <p class="hero-text">A simple space for students to organize tasks, discover useful resources, check events, and stay on track.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="planner.html">Open My Planner</a>
+          <a class="btn secondary" href="resources.html">Explore Resources</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p>Today's focus</p>
+        <h2 id="homeTaskCount">0 tasks</h2>
+        <div class="progress"><div id="homeProgress"></div></div>
+        <small id="homeProgressText">Start adding tasks in Planner.</small>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT YOU CAN DO</p><h2>Everything in one place</h2></div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="icon">✓</div><h3>Plan tasks</h3><p>Add, complete, and delete school tasks. Your tasks are saved in your browser.</p></article>
+        <article class="feature-card"><div class="icon">⌕</div><h3>Find resources</h3><p>Search and filter helpful study materials by category.</p></article>
+        <article class="feature-card"><div class="icon">◷</div><h3>Track events</h3><p>Keep upcoming activities and important student events easy to find.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 FocusHub. Student Productivity Website.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
