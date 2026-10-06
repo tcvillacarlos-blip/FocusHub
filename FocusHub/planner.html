@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner | FocusHub</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="logo" href="index.html">Focus<span>Hub</span></a><button class="menu-btn" id="menuBtn">☰</button><nav id="mainNav"><a href="index.html">Home</a><a class="active" href="planner.html">Planner</a><a href="resources.html">Resources</a><a href="events.html">Events</a><a href="profile.html">Profile</a><button class="theme-btn" id="themeBtn">☾</button></nav></header>
+<main class="page">
+  <div class="page-title"><p class="eyebrow">MY PLANNER</p><h1>Stay on top of your tasks.</h1><p>Add a task, set a priority, and mark it complete when you're done.</p></div>
+  <section class="planner-layout">
+    <form class="panel" id="taskForm">
+      <h2>Add a task</h2>
+      <label for="taskName">Task name</label><input id="taskName" type="text" placeholder="e.g. Finish Java activity" required>
+      <label for="taskDate">Due date</label><input id="taskDate" type="date" required>
+      <label for="taskPriority">Priority</label><select id="taskPriority"><option>Low</option><option selected>Medium</option><option>High</option></select>
+      <button class="btn primary full" type="submit">Add Task</button>
+      <p class="form-message" id="taskMessage"></p>
+    </form>
+    <section class="panel"><div class="list-head"><h2>My tasks</h2><span id="taskSummary">0 tasks</span></div><div id="taskList" class="task-list"></div></section>
+  </section>
+</main>
+<footer><p>© 2026 FocusHub. Student Productivity Website.</p></footer><script src="script.js"></script>
+</body></html>
